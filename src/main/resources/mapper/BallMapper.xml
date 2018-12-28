@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.healthbeauty.dao.BallMapper">
+  <resultMap id="BaseResultMap" type="org.healthbeauty.pojo.Ball">
+    <id column="id" jdbcType="INTEGER" property="userid" />
+    <id column="names" jdbcType="VARCHAR" property="names" />
+    <id column="password" jdbcType="VARCHAR" property="passwrod" />
+    <id column="name" jdbcType="VARCHAR" property="name" />
+    <id column="sg" jdbcType="VARCHAR" property="sg" />
+    <id column="phone" jdbcType="VARCHAR" property="phone" />
+  </resultMap>
+  <select id="select" parameterType="org.healthbeauty.pojo.Ball" resultType="List">
+    select * from ball
+  </select>
+</mapper>
